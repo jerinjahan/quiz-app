@@ -13,13 +13,7 @@ const routes = [
         path: '/mcq',
         name: 'MCQ',
         component: MCQ
-    },
-    // {
-    //     path: '/result',
-    //     name: 'Result',
-    //     component: Result,
-    //     props: true
-    // }
+    }
 ]
 
 const router = createRouter({

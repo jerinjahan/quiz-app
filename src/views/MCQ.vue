@@ -74,6 +74,11 @@
                 this.answers = [];
                 this.correct = 0;
                 this.perc = null;
+
+                var minutesToAdd = 30;  
+                var currentDate = new Date();
+                var futureDate = new Date(currentDate.getTime() + minutesToAdd*60000);
+                this.timer = futureDate.toISOString();
             }
         }
     }
