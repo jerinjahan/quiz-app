@@ -74,4 +74,12 @@
         line-height: 35px;
         align-items: center;
     }
+    input[type=radio]:checked + label{
+        color: #6A1CE8;
+        font-weight: bolder;
+    }
+    input[type=radio]:checked + label:before{
+        border: 1px solid #6A1CE8;
+        box-shadow: inset 0 0 0 4px #fff;
+    }
 </style>

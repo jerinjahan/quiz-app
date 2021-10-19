@@ -19,7 +19,7 @@
         name: 'MCQResult',
         props: ['answer'],
         methods:{
-            onClickButton (event) {
+            onClickButton () {
                 this.$emit('clicked', false)
             }
         }
