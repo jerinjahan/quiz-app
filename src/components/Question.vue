@@ -14,7 +14,6 @@
                 >
                 <label for="one" class="option">{{option}}</label>
             </div>
-            <br><br>
             <!-- <span>Selected : {{ selected }}</span> -->
         </div>
     </div>
@@ -23,7 +22,7 @@
 <script>
     export default {
         name: 'Question',
-        props:['item','index','list'],
+        props:['item','index','list','selectedOption'],
         data() {
             return {
                 options: [],
@@ -32,6 +31,7 @@
         },
         methods: {
             pickOption: function(a) {
+                console.log('list = ',this.list[this.index]);
                 this.selected = a;
                 if (this.item.answer === a) console.log('Correct ans');
                 else console.log('Wrong ans');

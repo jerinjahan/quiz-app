@@ -8,6 +8,7 @@
                 :item='item' 
                 :index='index'
                 :list='answers'
+                :selectedOption='answers[index]'
                 v-on:answer="handleAnswer"
             />
 
